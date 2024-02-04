@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --myfont: "Courier New", Courier, monospace;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--myfont);
+}
+
+#game {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+#bottom {
+  margin-top: 4rem;
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+}
+
+button {
+  font-size: 2.6rem;
+  padding: 1rem 3rem;
+}
+
+.cell {
+  width: 50%;
+  height: 50%;
+  opacity: 0.2;
+  float: left;
+}
+
+.cell.active {
+  opacity: 1;
+}
+
+.cell:nth-child(1) {
+  background-color: red;
+}
+.cell:nth-child(2) {
+    background-color: green;
+   
+}
+.cell:nth-child(3) {
+    background-color: blue;
+    
+}
+.cell:nth-child(4) {
+    background-color: yellow;
+    
+}
